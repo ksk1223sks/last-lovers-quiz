@@ -1,4 +1,4 @@
-import LastLoversQuiz from "./LoveOrderQuiz";
+import LastLoversQuiz from "./LastLoversQuiz";
 
 function App() {
   return <LastLoversQuiz />;
