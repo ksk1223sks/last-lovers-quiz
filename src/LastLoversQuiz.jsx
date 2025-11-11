@@ -23,35 +23,35 @@ const ITEMS = [
 const RESULTS = {
   "heart+hourglass+star": {
     title: "王道ラブストーリータイプ",
-    desc: "恋が始まり、ゆっくりと深まって、やがて運命の形に。出会いから永遠へ続くような、ドラマチックで穏やかな流れが訪れます。",
+    desc: "“♥ LAST LOVERS”のときめきある出会いから、“⏳ 透明な砂時計”の透明な想いを刻み、最後に“🌟 ふたりのデスティネーション”で二人がたどり着く終着点へ。恋の始まりから成長、そして未来へとつながる、時を超えるような理想のラブストーリーです。",
   },
   "hourglass+heart+star": {
     title: "心の絆タイプ",
-    desc: "内面の優しさが恋を呼び寄せ、想いが実る道へ。あなたの誠実さが強い味方になります。",
+    desc: "“⏳ 透明な砂時計”で澄んだ一途な想いを抱き、“♥ LAST LOVERS”で心が揺れ動き、最後に“🌟 ふたりのデスティネーション”で強い覚悟へと変わる流れ。静かな時間が紡ぐ絆の深さを感じる、穏やかで力強い恋です。",
   },
   "star+hourglass+heart": {
     title: "再生の恋タイプ",
-    desc: "一度終わった恋が、新しいトキメキへと変わる兆し。過去を受け入れて次へ踏み出す勇気が恋を動かします。",
+    desc: "“🌟 ふたりのデスティネーション”が描く終点から、新しい旅として“⏳ 透明な砂時計”の静けさへ、そして“♥ LAST LOVERS”の弾む未来へ。過去と向き合い、自分を整えたうえで再び恋に踏み出すあなたにふさわしい、再生の物語です。",
   },
   "heart+star+hourglass": {
     title: "大人の恋タイプ",
-    desc: "勢いで始まった恋が、やがて静かな想いに変わる流れ。ドキドキと安らぎを両立させる関係性が育ちます。",
+    desc: "“♥ LAST LOVERS”のワクワクを出発点に、“🌟 ふたりのデスティネーション”で描かれる物語の深まり、そして“⏳ 透明な砂時計”の穏やかな時間へ。情熱と安らぎを両立させ、成熟した愛を育む大人の恋の形です。",
   },
   "hourglass+star+heart": {
     title: "運命の再会タイプ",
-    desc: "時を越えた愛が、再びトキメキを取り戻す暗示。過去の縁が新しい恋を紡ぐ可能性があります。",
+    desc: "“⏳ 透明な砂時計”で始まる静かな想いが、“🌟 ふたりのデスティネーション”という物語のクライマックスを迎え、最後に“♥ LAST LOVERS”で新たなドキドキを迎える。時を超えた縁、その先にある再会と新たな始まりを感じさせる恋です。",
   },
   "star+heart+hourglass": {
     title: "リスタートタイプ",
-    desc: "終わりの先に、新しい恋の予感が見える並び。過去の経験を経て、次の恋こそ本当の愛へと成長します。",
+    desc: "“🌟 ふたりのデスティネーション”の終わりが、“♥ LAST LOVERS”の出会いへとつながり、そして“⏳ 透明な砂時計”でゆったりと育まれる時間へ。経験を糧に、次のステップへと進むあなたのための、新たな恋の予感です。",
   },
 };
 
 // 🎵 各楽曲の公式リンク（LinkCore）
 const musicLinks = {
-  heart: "https://linkco.re/2Mt22FZT?lang=ja",       // LAST LOVERS
-  hourglass: "https://linkco.re/ydEfzZbB?lang=ja",   // 透明な砂時計
-  star: "https://linkco.re/XmnUZ5Se?lang=ja",        // ふたりのデスティネーション
+  heart: "https://linkco.re/2Mt22FZT?lang=ja",
+  hourglass: "https://linkco.re/ydEfzZbB?lang=ja",
+  star: "https://linkco.re/XmnUZ5Se?lang=ja",
 };
 
 export default function LastLoversQuiz() {
