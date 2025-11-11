@@ -2,13 +2,6 @@
 -------------------------------------------------------
 React single-file component for 
 "栗林みな実 3連シングル『恋の順番占い』" Web診断
-
-📘 How to use:
-1. Ensure your project uses Tailwind CSS.
-2. (Optional) Install framer-motion: npm install framer-motion
-3. Place this file under src/components/LastLoversQuiz.jsx
-4. Import and render it:
-   import LastLoversQuiz from './components/LastLoversQuiz'
 ------------------------------------------------------- */
 
 import React, { useState } from "react";
@@ -23,31 +16,30 @@ const ITEMS = [
 const RESULTS = {
   "heart+hourglass+star": {
     title: "王道ラブストーリータイプ",
-    desc: "“♥ LAST LOVERS”のときめきある出会いから、“⏳ 透明な砂時計”の透明な想いを刻み、最後に“🌟 ふたりのデスティネーション”で二人がたどり着く終着点へ。恋の始まりから成長、そして未来へとつながる、時を超えるような理想のラブストーリーです。",
+    desc: "“♥ LAST LOVERS”の胸躍る出会いで始まり、“⏳ 透明な砂時計”の一途な想いが積み重なり、最後に“🌟 ふたりのデスティネーション”で二人の物語が結ばれる流れ。恋の高揚と静かな想い、そして運命の終着点までを体感できる、ドラマチックで幸せな恋です。",
   },
   "hourglass+heart+star": {
     title: "心の絆タイプ",
-    desc: "“⏳ 透明な砂時計”で澄んだ一途な想いを抱き、“♥ LAST LOVERS”で心が揺れ動き、最後に“🌟 ふたりのデスティネーション”で強い覚悟へと変わる流れ。静かな時間が紡ぐ絆の深さを感じる、穏やかで力強い恋です。",
+    desc: "“⏳ 透明な砂時計”で静かに想いを育み、“♥ LAST LOVERS”のときめきで恋が加速し、最後に“🌟 ふたりのデスティネーション”で互いの想いを確認する。純粋さと喜び、安心感が融合した、深い絆を感じる恋の物語です。",
   },
   "star+hourglass+heart": {
     title: "再生の恋タイプ",
-    desc: "“🌟 ふたりのデスティネーション”が描く終点から、新しい旅として“⏳ 透明な砂時計”の静けさへ、そして“♥ LAST LOVERS”の弾む未来へ。過去と向き合い、自分を整えたうえで再び恋に踏み出すあなたにふさわしい、再生の物語です。",
+    desc: "“🌟 ふたりのデスティネーション”での終点から過去を振り返り、“⏳ 透明な砂時計”で想いを整理し、最後に“♥ LAST LOVERS”で新たな恋の始まりへ。終わりと再生を経て前向きに進む、あなたの成長と新しい恋の兆しを描く物語です。",
   },
   "heart+star+hourglass": {
     title: "大人の恋タイプ",
-    desc: "“♥ LAST LOVERS”のワクワクを出発点に、“🌟 ふたりのデスティネーション”で描かれる物語の深まり、そして“⏳ 透明な砂時計”の穏やかな時間へ。情熱と安らぎを両立させ、成熟した愛を育む大人の恋の形です。",
+    desc: "“♥ LAST LOVERS”で恋の楽しさを味わい、“🌟 ふたりのデスティネーション”で想いを深め、最後に“⏳ 透明な砂時計”で静かに愛を育む。感情の高揚と落ち着きのバランスが取れた、成熟した大人の恋の形を示しています。",
   },
   "hourglass+star+heart": {
     title: "運命の再会タイプ",
-    desc: "“⏳ 透明な砂時計”で始まる静かな想いが、“🌟 ふたりのデスティネーション”という物語のクライマックスを迎え、最後に“♥ LAST LOVERS”で新たなドキドキを迎える。時を超えた縁、その先にある再会と新たな始まりを感じさせる恋です。",
+    desc: "“⏳ 透明な砂時計”での静かな想いが、“🌟 ふたりのデスティネーション”の葛藤と成長を経て、“♥ LAST LOVERS”のドキドキで再び花開く。時間を越えた縁と再会、そして新しい恋の始まりを感じる物語です。",
   },
   "star+heart+hourglass": {
     title: "リスタートタイプ",
-    desc: "“🌟 ふたりのデスティネーション”の終わりが、“♥ LAST LOVERS”の出会いへとつながり、そして“⏳ 透明な砂時計”でゆったりと育まれる時間へ。経験を糧に、次のステップへと進むあなたのための、新たな恋の予感です。",
+    desc: "“🌟 ふたりのデスティネーション”の終わりが、“♥ LAST LOVERS”の出会いへとつながり、そして“⏳ 透明な砂時計”で想いをじっくり育む。過去を糧に新しい恋へ踏み出す、前向きで心温まるストーリーです。",
   },
 };
 
-// 🎵 各楽曲の公式リンク（LinkCore）
 const musicLinks = {
   heart: "https://linkco.re/2Mt22FZT?lang=ja",
   hourglass: "https://linkco.re/ydEfzZbB?lang=ja",
@@ -163,7 +155,7 @@ export default function LastLoversQuiz() {
               <h3 className="mt-2 text-pink-600 font-medium">{result.title}</h3>
               <p className="mt-2 text-gray-700">{result.desc}</p>
 
-              {/* 縦並びリンク＆ボタン */}
+              {/* 縦並びリンク＆ボタン（曲名追加済み） */}
               <div className="mt-4 flex flex-col gap-2">
                 <a
                   href={musicLinks[selected[0]]}
@@ -171,7 +163,7 @@ export default function LastLoversQuiz() {
                   rel="noreferrer"
                   className="text-sm px-3 py-2 rounded-md border bg-white hover:bg-gray-50 text-gray-700"
                 >
-                  1曲目を聴く
+                  1曲目を聴く — {ITEMS.find((it) => it.id === selected[0]).title}
                 </a>
                 <a
                   href={musicLinks[selected[1]]}
@@ -179,7 +171,7 @@ export default function LastLoversQuiz() {
                   rel="noreferrer"
                   className="text-sm px-3 py-2 rounded-md border bg-white hover:bg-gray-50 text-gray-700"
                 >
-                  2曲目を聴く
+                  2曲目を聴く — {ITEMS.find((it) => it.id === selected[1]).title}
                 </a>
                 <a
                   href={musicLinks[selected[2]]}
@@ -187,7 +179,7 @@ export default function LastLoversQuiz() {
                   rel="noreferrer"
                   className="text-sm px-3 py-2 rounded-md border bg-white hover:bg-gray-50 text-gray-700"
                 >
-                  3曲目を聴く
+                  3曲目を聴く — {ITEMS.find((it) => it.id === selected[2]).title}
                 </a>
 
                 <button
@@ -240,4 +232,4 @@ export default function LastLoversQuiz() {
       </footer>
     </div>
   );
-}
+                           }
