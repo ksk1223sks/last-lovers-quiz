@@ -1,7 +1,7 @@
-import LoveOrderQuiz from "./LoveOrderQuiz";
+import LastLoversQuiz from "./LoveOrderQuiz";
 
 function App() {
-  return <LoveOrderQuiz />;
+  return <LastLoversQuiz />;
 }
 
 export default App;
