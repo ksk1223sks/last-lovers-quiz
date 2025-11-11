@@ -163,7 +163,8 @@ export default function LastLoversQuiz() {
               <h3 className="mt-2 text-pink-600 font-medium">{result.title}</h3>
               <p className="mt-2 text-gray-700">{result.desc}</p>
 
-              <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center">
+              {/* 縦並びリンク＆ボタン */}
+              <div className="mt-4 flex flex-col gap-2">
                 <a
                   href={musicLinks[selected[0]]}
                   target="_blank"
@@ -188,9 +189,7 @@ export default function LastLoversQuiz() {
                 >
                   3曲目を聴く
                 </a>
-              </div>
 
-              <div className="mt-4 flex gap-2">
                 <button
                   onClick={() => {
                     const text = `私の恋の順番は ${selected
