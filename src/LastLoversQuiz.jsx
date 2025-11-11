@@ -120,7 +120,7 @@ export default function LastLoversQuiz() {
           <button
             onClick={handleReveal}
             disabled={selected.length !== 3 || revealed}
-            className={`px-4 py-2 rounded-md text-sm font-medium shadow-sm transition ${
+            className={`px-6 py-3 rounded-md text-base font-medium shadow-sm transition ${
               selected.length === 3 && !revealed
                 ? "bg-pink-500 text-white hover:scale-[1.02]"
                 : "bg-gray-200 text-gray-600 cursor-not-allowed"
@@ -156,7 +156,7 @@ export default function LastLoversQuiz() {
               <p className="mt-2 text-gray-700">{result.desc}</p>
 
               {/* 縦並びリンク＆ボタン（曲名追加済み） */}
-              <div className="mt-4 flex flex-col gap-2">
+              <div className="mt-4 flex flex-col gap-3">
                 <a
                   href={musicLinks[selected[0]]}
                   target="_blank"
@@ -232,4 +232,4 @@ export default function LastLoversQuiz() {
       </footer>
     </div>
   );
-                           }
+                      }
